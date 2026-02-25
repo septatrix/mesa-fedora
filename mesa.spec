@@ -463,6 +463,7 @@ rewrite_wrap_file rustc-hash
   -Dshared-llvm=enabled \
   -Dvalgrind=%{?with_valgrind:enabled}%{!?with_valgrind:disabled} \
   -Dbuild-tests=false \
+  -Dlegacy-wayland=bind-wayland-display \
 %if !0%{?with_libunwind}
   -Dlibunwind=disabled \
 %endif
